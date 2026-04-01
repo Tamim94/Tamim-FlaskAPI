@@ -50,5 +50,11 @@ jobs:
         with:
           image-ref: 'devsecops-flask-api:latest'
           format: 'table'
-          exit-code: '0' 
+          exit-code: '0'
           vuln-type: 'os,library'
+
+      - name: Run Conftest to check Kubernetes security policies
+        uses: instrumenta/conftest-action@master
+        with:
+          files: k8s.yaml
+          policy: policy/deployment.rego
