@@ -1,0 +1,26 @@
+# Version control
+.git
+.gitignore
+
+# Docker & Kubernetes config (not needed inside container)
+Dockerfile
+.dockerignore
+k8s.yaml
+
+# Documentation
+README.md
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE configurations
+.idea/
+.vscode/
+
