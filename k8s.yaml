@@ -15,7 +15,7 @@ spec:
         app: flask-api
     spec:
       securityContext:
-        runAsUser: 0
+        runAsUser: 1000
       containers:
         - name: flask-api
           image: flask-api:latest
